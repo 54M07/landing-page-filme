@@ -1,0 +1,38 @@
+.cast {
+    &__title {
+        font-size: 24px;
+        margin-bottom: 20px;
+        text-align: center;
+        color: $color-text;
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        margin: 20px;
+        text-align: center;
+
+        &__image {
+            max-width: 150px;
+            border-radius: 50%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        &__name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: $color-text;
+        }
+
+        &:hover .cast__item__image {
+            transform: scale(1.1);
+        }
+    }
+}
